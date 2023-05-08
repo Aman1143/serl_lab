@@ -1,0 +1,117 @@
+.about_page{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   /* height: 100%; */
+   background-color: #f7fcff;
+}
+.meet_box{
+   background-color: beige;
+   margin-top: 71px;
+}
+#meet {
+   padding: 10px;
+   color: #034c6e;
+   font-size: 3.7rem;
+   text-align: center;
+   letter-spacing: 1px;
+}
+#Team{
+   background-color: #dae1d200;
+}
+#team {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* min-height: 100vh; */
+   width: 100%;
+   background: #d5e8f1;
+}
+
+.about_container {
+   padding-top: 20px;
+   padding-bottom: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.about_card {
+   width: 250px;
+   height: 350px;
+   padding: 40px 10px;
+   margin: 5px 10px 5px;
+   background: #e49595bd;
+   box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+               -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+
+.about_card .about_content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.about_card .about_content .imgBx {
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 15px;
+   overflow: hidden;
+}
+
+.about_card .about_content .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.about_card .about_content .contentBx h4 {
+
+
+   color: #4204a6;
+   font-size: 1.8rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+
+.about_card .content .contentBx h5 {
+   color: #6c758f;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.about_card .about_content .sci {
+   margin-top: 20px;
+}
+
+.about_card .about_content .sci a {
+   text-decoration: none;
+   color: #1c347e;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+
+.about_card .about_content .sci a:hover {
+   color: #0196e3;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.4rem;
+   color: #1c347e;
+   background-color: #c0d8dc75;
+}

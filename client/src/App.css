@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: none; */
+  
+}
+body{
+      position: relative;
+      /* display: flex;
+      flex-direction: column; */
+      height: 100%;
+}

@@ -1,0 +1,78 @@
+.card_container{
+	background-color: aliceblue;
+	margin-top: 4rem;
+
+}
+/* .row{
+ display: flex;
+ flex-direction: column;
+} */
+.card_box{
+	margin: 17px;
+    padding: 14px;
+    box-shadow: 1px 2px 3px gray, -1px -2px 2px gray;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+}
+.image_section{
+	padding: 10px;
+}
+.img_box{
+	height: 12rem;
+    width: 17rem;
+}
+
+.name_heading{
+	padding: 10px;
+	background-color: darkturquoise;
+}
+.second_div{
+	display: flex;
+	flex-direction: row;
+	background-color: aquamarine;
+}
+.address{
+	padding: 10px;
+}
+.econtact{
+	padding: 10px;	
+    background-color: burlywood;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.add_member{
+	background-color: #7037bfb0;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 1rem;
+	font-family:'Signika Negative', sans-serif;
+	border: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.add_member:hover{
+	width: 7.5rem;
+	height: 2.5rem;
+	background-color: blueviolet;
+	padding: 2px;
+	
+}
+.add_phd{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+}
+.option{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 10rem;
+}
+.fas{
+	width: 30px;
+}

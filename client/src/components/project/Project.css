@@ -1,0 +1,87 @@
+.posts_container {
+	margin: auto;
+	/* width: 23rem; */
+	width: 60%;
+}
+
+.main_container {
+	/* background-color: yellow; */
+	background-color: antiquewhite;
+	padding: 2px;
+	margin: 12px;
+	border: 2px solid red;
+	border-radius: 10px;
+}
+
+.projectImage {
+	width: 21rem;
+	height: 18rem;
+}
+
+.description {
+	padding: 5px;
+	border: 2px solid rgb(108, 235, 178);
+	/* border-top: none; */
+	border-radius: 5px;
+	background-color: antiquewhite;
+}
+
+.button1 {
+	display: flex;
+	justify-content: space-between;
+	background-color: beige;
+}
+
+.mentor {
+	padding: 10px;
+	/* background-color: aliceblue; */
+	border-radius: 12px;
+}
+
+.publisher {
+	padding: 10px;
+	/* background-color: aliceblue; */
+	border-radius: 12px;
+}
+
+.button2 {
+	/* background-color: coral; */
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.fontaswome {
+	/* padding: 5px; */
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.view {
+	margin: 3px;
+	text-decoration: none;
+	color: white;
+}
+
+.design {
+	font-size: larger;
+	color: forestgreen;
+	text-shadow: 1px 2px 2px;
+}
+
+.higher {
+	padding-left: 2px;
+	/* text-decoration-thickness: 2px; */
+	text-shadow: 0.2px 1px 1px black;
+}
+
+.fontaswome:hover {
+	background-color: brown;
+}
+
+.post_option {
+	margin: auto;
+	width: 25%;
+	margin-top: 5rem;
+	/* display: flex;
+	justify-content: center; */
+}
