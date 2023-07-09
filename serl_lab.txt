@@ -1,0 +1,83 @@
+# 23-Final-project
+ 
+ 
+2nd Year 4th semester project
+Indian Institute of Information Technology Prayagraj
+Group: Invisible
+Group No.: 2
+
+
+
+## Software Engineering Lab Using Node JS
+
+
+Submitted To:
+Ashutosh Kumar 
+Phd Scholor
+Indian Institute of Information Technology
+Prayagraj
+
+ 
+
+## Stack used
+* M - MongoDB
+* E - Express
+* R - React.js
+* N - Node.js
+
+We've also used Materialize CSS
+
+##Pre Requiste
+* MongoDB Compass
+* Node
+
+## Installation 
+
+### Windows
+
+1. Clone the project on your local machine by typing the following command in CMD.
+```bash
+git clone https://github.com/Aman1143/serl_lab.git
+```
+
+2. Navigate to server  folder and run the following command to download the node_modules for the server.
+```bash
+npm i
+```
+
+3. Start the server by running the following command
+```bash
+npm start
+```
+
+4. Open a new CMD window and navigate to the client folder -> client and run the following commands:
+```bash
+npm install yarn
+
+yarn add create react-app .
+```
+```
+
+```bash
+yarn add react-router-dom --save
+```
+
+
+```
+
+5. Finally run the following command and a new tab will automatically open in your default browser.
+```bash
+yarn start
+```
+
+### All secret
+MONGO_URL="mongodb://localhost:27017/serl_lab"
+PORT=5000
+JWT_KEY="SERLLABINVISBLE"
+SMPT_SERVICE="gmail"
+SMPT_MAIL="debug1132@gmail.com"
+SMPT_PASSWORD="iicqcpvogtmlhfvr"
+CLOUDINARY_NAME="dguioitmu"
+CLOUDINARY_API_KEY="692893178813393"
+CLOUDINARY_API_SECRET="PDKWiyszFkhM6V2-JYlXb2yUd8M"
+

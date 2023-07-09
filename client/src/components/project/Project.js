@@ -11,9 +11,9 @@ import { getAllFacultyProjects } from '../../action/FacultyAction'
 
 const Project = () => {
 	const dispatch = useDispatch();
-	const { loading, allPhdProject, error } = useSelector((state) => state.allPhdProjects)
-	const {allFacultyProject,loading:facultyloading}=useSelector((state)=>state.allFacultysProject)
-	const { isAuthenticated, user } = useSelector((state) => state.user);
+	const { loading, allPhdProject, error } = useSelector((state) => state?.allPhdProjects)
+	const {allFacultyProject,loading:facultyloading}=useSelector((state)=>state?.allFacultysProject)
+	const { isAuthenticated, user } = useSelector((state) => state?.user);
 	useEffect(() => {
 		dispatch(getAllPhdProjects());
 	}, [dispatch])
@@ -27,14 +27,14 @@ const Project = () => {
 			<Navbar />
 			<div className="post_option">
 				{
-					( user.role === 'Phd') && (
+					( user?.role === 'Phd') && (
 						<div className="view">
 							<a href='/addProject'>Phd? share your project</a>
 						</div>
 					)
 				}
 				{
-					(user.role === "Faculty") && (
+					(user?.role === "Faculty") && (
 						<div className="view">
 							<a href='/addFacultyProject'>Faculty? share your project</a>
 						</div>
@@ -43,8 +43,8 @@ const Project = () => {
 			</div>
 			<div className="posts_container">
 				{
-					allPhdProject && allPhdProject.length > 0 ? (
-						allPhdProject.map((item) => (
+					allPhdProject && allPhdProject?.length > 0 ? (
+						allPhdProject?.map((item) => (
 							<div className="main_container">
 								<div className="description">
 							     	<p style={{fontWeight:'500',color:'red'}}>Description:</p>

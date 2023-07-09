@@ -1,15 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import './Navbar.css'
 import axios from 'axios';
 import { logout } from '../../action/AuthAction';
 
 const Navbar = () => {
-  const { isAuthenticated } = useSelector((state) => state.user)
+  const token=JSON.stringify(localStorage.getItem('token'));
+    const {loading, isAuthenticated,error}=useSelector((state)=>state.user)
+
+  const navigate=useNavigate();
   const dispatch=useDispatch();
   const handleLogout=()=>{
-     dispatch(logout());
+     dispatch(logout(navigate));
   }
 
   return (
@@ -36,7 +39,7 @@ const Navbar = () => {
               <li><Link to="/about" data-item='Home'>About</Link></li>
             </div>
             {
-              !isAuthenticated ? (
+              !isAuthenticated && token ? (
                 <div className="link">
               <li><Link to="/auth" data-item='Home'>SignIn / Login</Link></li>
             </div>

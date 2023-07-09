@@ -1,6 +1,11 @@
 import React from 'react'
 import './About.css'
 import Navbar from '../../components/navbar/Navbar'
+import Aswani from '../../images/Ashwani.jpg'
+import saurav from '../../images/saurav.jpg'
+import satyam from '../../images/satyam.jpg'
+import sindhu from '../../images/sindhu.jpg'
+import aman from '../../images/aman.jpeg'
 const About = () => {
 	return (
 		<>
@@ -14,7 +19,7 @@ const About = () => {
 						<div class="about_card">
 							<div class="about_content">
 								<div class="imgBx">
-									<img src="#" alt="" />
+									<img src={aman} alt="" />
 								</div>
 								<div class="contentBx">
 									<h4>Aman Nanda</h4>
@@ -34,7 +39,7 @@ const About = () => {
 						<div class="about_card">
 							<div class="about_content">
 								<div class="imgBx">
-									<img src="#" alt="" />
+									<img src={sindhu} alt="" />
 								</div>
 								<div class="contentBx">
 									<h4>Sindhu</h4>
@@ -53,7 +58,7 @@ const About = () => {
 						<div class="about_card">
 							<div class="about_content">
 								<div class="imgBx">
-									<img src="images/saurav.jpg" alt="" />
+									<img src={saurav} alt="" />
 								</div>
 								<div class="contentBx">
 									<h4>Saurav Kumar</h4>
@@ -71,7 +76,7 @@ const About = () => {
 						<div class="about_card">
 							<div class="about_content">
 								<div class="imgBx">
-									<img src="images/Ashwani.jpg" alt="" />
+									<img src={Aswani} alt="" />
 								</div>
 								<div class="contentBx">
 									<h4>Ashwani Jha</h4>
@@ -88,11 +93,11 @@ const About = () => {
 						<div class="about_card">
 							<div class="about_content">
 								<div class="imgBx">
-									<img src="images/satyam.jpg" alt="" />
+									<img src={satyam} alt="" />
 								</div>
 								<div class="contentBx">
 									<h4>Satyam Thakur</h4>
-									<h5>Web Designer</h5>
+									<h5>Developer</h5>
 								</div>
 								<div class="sci">
 									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>

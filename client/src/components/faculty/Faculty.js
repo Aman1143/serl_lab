@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom'
 import {  deleteFaculty, getAllfaculty } from '../../action/FacultyAction'
 
 const Faculty = () => {
-	const { loading, allFaculty, error } = useSelector((state) => state.allFacultyProfile)
-	const { user } = useSelector((state) => state.user)
+	const { loading, allFaculty, error } = useSelector((state) => state?.allFacultyProfile)
+	const { user } = useSelector((state) => state?.user)
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	useEffect(() => {
@@ -18,7 +18,6 @@ const Faculty = () => {
 	}, [dispatch]);
 	const handleDelete = (id) => {
 		dispatch(deleteFaculty(id,navigate));
-		console.log("delete faculty");
 	}
 	return (
 		<>
@@ -26,7 +25,7 @@ const Faculty = () => {
 			<div className="card_container">
 				<div className="row">
 					{
-						user.role === "Faculty" && (
+						user?.role === "Faculty" && (
 							<div className="add_phd">
 								<Link to="/addfaculty"><button type="submit" className='add_member'>Add yourself</button></Link>
 							</div>
@@ -38,31 +37,31 @@ const Faculty = () => {
 								<div className="card_box">
 									<div className="card">
 										<div className="name_heading">
-											<h2>{item.username}</h2>
-											<span>{item.position}</span>
+											<h2>{item?.username}</h2>
+											<span>{item?.position}</span>
 											<p>IIITA</p>
 										</div>
 										<div className="second_div">
 											<div className='image_section'>
-												<img src={item.profileImage.url} className='img_box' alt="" />
+												<img src={item?.profileImage?.url} className='img_box' alt="" />
 											</div>
 											<div className="address">
 												<span>Address:</span>
-												<p>{item.address}</p>
+												<p>{item?.address}</p>
 												<p>IIITA </p>
 												<span>Contact No:</span>
-												<p>{item.phone}</p>
+												<p>{item?.phone}</p>
 											</div>
 										</div>
 										<div className="econtact">
 											<div>
 												<span>Email:</span>
-												<p>{item.email}</p>
+												<p>{item?.email}</p>
 											</div>
 											{
-												user.role === 'Admin' && (
+												user?.role === 'Admin' && (
 													<div>
-														<button className='btn' onClick={() => handleDelete(item._id)}>Delete</button>
+														<button className='btn' onClick={() => handleDelete(item?._id)}>Delete</button>
 													</div>
 												)
 											}

@@ -47,11 +47,12 @@ export const resetPassword = ({token, password}) => async (dispatch) => {
     }
   };
 
-  export const logout=()=>async(dispatch)=>{
+  export const logout=(navigate)=>async(dispatch)=>{
     dispatch({ type: "LogoutRequest" });
     try {
       const { data } = await AuthApi.logout();
       dispatch({ type: "LogoutSuccess", payload: data });
+      navigate('../',{replace:true});
     } catch (error) {
       console.log(error);
       dispatch({

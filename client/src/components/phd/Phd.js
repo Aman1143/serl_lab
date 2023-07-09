@@ -27,15 +27,15 @@ const Phd = () => {
 			<div className="card_container">
 				<div className="row">
 					{
-						user.role === "Phd" && (
+						user?.role === "Phd" && (
 							<div className="add_phd">
 								<Link to="/addphd"><button type="submit" className='add_member'>Add yourself</button></Link>
 							</div>
 						)
 					}
 					{
-						allPhds && allPhds.length > 0 ? (
-							allPhds.map((item) => (
+						allPhds && allPhds?.length > 0 ? (
+							allPhds?.map((item) => (
 								<div className="card_box">
 									<div className="card">
 										<div className="name_heading">
@@ -61,7 +61,7 @@ const Phd = () => {
 												<p>{item.email}</p>
 											</div>
 											{
-												user.role === 'Admin' && (
+												user?.role === 'Admin' && (
 													<div>
 														<button className='btn' onClick={() => handleDelete(item._id)} >Delete</button>
 													</div>

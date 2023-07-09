@@ -155,6 +155,7 @@ export const resetPassword = async (req, res) => {
 }
 
 export const logout=async(req,res)=>{
+	// console.log(req.headers.authorization);
    try {
 	req.headers.authorization=null;
 	res.status(200).json({

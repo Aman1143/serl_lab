@@ -1,11 +1,11 @@
 import * as FacultyApi from '../api/FacultyRequest.js'
 
-export const facultyRegister=(formData)=>async(dispatch)=>{
+export const facultyRegister=(formData,navigate)=>async(dispatch)=>{
 	dispatch({type:"FacultyRegisterRequest"});
 	try {
 		const {data}=await FacultyApi.facultyRegister(formData);
 		dispatch({type:"FacultyRegisterSuccess",payload:data.faculty});
-		// navigate('../',{replace:true});
+		navigate('../',{replace:true});
 	} catch (error) {
 		console.log(error) 
         dispatch({type:"FacultyRegisterFailure",payload:error.response.data.message});

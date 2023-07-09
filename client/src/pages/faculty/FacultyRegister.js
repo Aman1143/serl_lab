@@ -20,7 +20,7 @@ const FacultyRegister = () => {
 	}
 	const handleSubmit=(e)=>{
 		e.preventDefault();
-		dispatch(facultyRegister(data));
+		dispatch(facultyRegister(data,navigate));
 		resetForm();
 	}
 	const handleImageChange=(e)=>{

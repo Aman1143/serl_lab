@@ -18,30 +18,23 @@ import About from './pages/about/About';
 
 
 function App() {
+  const token=JSON.stringify(localStorage.getItem('token'));
   const {loading, isAuthenticated,error}=useSelector((state)=>state.user)
 
   return (
     <div className="App">
-    {/* <ForgotPasswordPage /> */}
-    {/* <Faculty /> */}
-    {/* <Phd /> */}
-    {/* <FacultyRegister /> */}
-    {/* <PhdRegister /> */}
-    {/* <Researchs /> */}
-    {/* <Project /> */}
-    {/* <About /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/auth' element={ <Auth />} />
         <Route path='/forgot/password' element={<ForgotPasswordPage />} />
         <Route path='/api/users/password/reset/:token' element={<ResetPassword />} />
-        <Route path='/faculty' element={isAuthenticated ?<Faculty />:<Auth />} />
-        <Route path='/phd' element={isAuthenticated ?<Phd /> :<Auth />} />
-        <Route path='/addphd' element={<PhdRegister />} />
-        <Route path='/addfaculty' element={<FacultyRegister />} />
+        <Route path='/faculty' element={ <Faculty />} />
+        <Route path='/phd' element={ <Phd /> } />
+        <Route path='/addphd' element={isAuthenticated ? <PhdRegister />:<Auth />} />
+        <Route path='/addfaculty' element={isAuthenticated ?<FacultyRegister />:<Auth />} />
         <Route path='/addProject' element={<Researchs />} />
-        <Route path='/allProject' element={isAuthenticated ?<Project /> :<Auth />} />
-        <Route path='/addFacultyProject' element={<FacultyProject /> } />
+        <Route path='/allProject' element={<Project /> }/>
+        <Route path='/addFacultyProject' element={ <FacultyProject />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </div>

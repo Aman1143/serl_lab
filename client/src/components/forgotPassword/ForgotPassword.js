@@ -8,7 +8,6 @@ const ForgotPasswordPage = () => {
 	
 	const handleSubmit=(e)=>{
 		e.preventDefault();
-	  alert("hello")
        disPatch(forgotPassword({email:email}));
 	}
   return (

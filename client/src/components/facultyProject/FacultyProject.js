@@ -15,19 +15,7 @@ const FacultyProject = () => {
 	  const handleSubmit = (e) => {
 		e.preventDefault();
 		dispatch(createFacultyProject({description:description,link:link,publisher:publisher},navigate))
-		// resetForm();
 	  };
-	//   const handleImageChange = (e) => {
-	// 	const file = e.target.files[0];
-	// 	const reader = new FileReader();
-	// 	reader.readAsDataURL(file);
-	// 	reader.onload = () => {
-	// 	  if (reader.readyState === 2) {
-	// 		// setData({...data,image:reader.result})
-	// 		setImage(reader.result);
-	// 	  }
-	// 	}
-	//   }
 
 	  return (
 		<>
